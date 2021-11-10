@@ -10,7 +10,7 @@
 	--light-grayish-magenta: hsl(300, 24%, 96%);
 	--white: hsl(0, 0%, 100%);
 } 
-/*body {
+body {
 	font-family: 'Spartan', sans-serif;
 	font-size: 15px;
 	height: 100vh;
@@ -107,24 +107,31 @@ main {
 }
 @media only screen and (max-width: 1024px) {
 	main {
+		padding: 4em 0;
+		margin: 0 auto;
 		text-align: center;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
 	}
 	.header, .ratings {
+		margin: 0 auto;
 		text-align: center;
 	}
 	.rating-card {
+		margin: 0 auto;
+		width: 100%;
 		flex-direction: column;
 		justify-content: center;
 		gap: 0;
 	}
-	.rating-card-center, .rating-card-right {
-		margin-left: 0;
-	}
 	.testimonials {
+		margin: 0 auto;
 		grid-column-end: 1;
 		flex-direction: column;
-		gap: 0;
+		gap: 1;
+		padding-bottom: 4em; 
 	}
-}*/
+	.card-top, .card-center, .card-bottom {
+		margin: 0 0;
+	}
+}
